@@ -107,7 +107,7 @@ class DialogueBox extends FlxSpriteGroup
 				var face:FlxSprite = new FlxSprite(320, 170).loadGraphic(Paths.image('weeb/spiritFaceForward'));
 				face.setGraphicSize(Std.int(face.width * 6));
 				add(face);
-			case 'lo-fight' | 'overhead' | 'ballistic' | 'lo-fight-b-side' | 'overhead-b-side' | 'ballistic-b-side' | 'goodbye' | 'end':
+			case 'lo-fight' | 'overhead' | 'ballistic' | 'lo-fight-b-side' | 'overhead-b-side' | 'ballistic-b-side' | 'Goodbye' | 'Ending':
 				hasDialog = true;
 				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
 				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
