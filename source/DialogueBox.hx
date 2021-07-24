@@ -107,7 +107,7 @@ class DialogueBox extends FlxSpriteGroup
 				var face:FlxSprite = new FlxSprite(320, 170).loadGraphic(Paths.image('weeb/spiritFaceForward'));
 				face.setGraphicSize(Std.int(face.width * 6));
 				add(face);
-			case 'lo-fight' | 'overhead' | 'ballistic' | 'lo-fight-b-side' | 'overhead-b-side' | 'ballistic-b-side' | 'Goodbye' | 'Ending':
+			case 'lo-fight' | 'overhead' | 'ballistic' | 'lo-fight-b-side' | 'overhead-b-side' | 'ballistic-b-side' | 'goodbye' | 'end':
 				hasDialog = true;
 				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
 				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
@@ -171,6 +171,9 @@ class DialogueBox extends FlxSpriteGroup
 							portraitLeft.animation.addByPrefix('enter', 'Whitty Portrait Crazy', 24, true);
 						case 'ballistic-b-side':
 							portraitLeft.animation.addByPrefix('enter', 'Whitty Portrait Crazy', 24, true);
+						case 'goodbye'
+						  portraitLeft.animation.addByPrefix('enter', 'Whitty Portrait Crazy', 24, true);
+						case 'end'
 					}
 
 					portraitLeft.antialiasing = true;
@@ -347,6 +350,10 @@ class DialogueBox extends FlxSpriteGroup
 						swagDialogue.sounds =  [FlxG.sound.load(Paths.sound('ballistic', 'shared'), 0.6)];
 					else if (PlayState.SONG.song.toLowerCase() == 'lo-fight' || PlayState.SONG.song.toLowerCase() == 'overhead')
 						swagDialogue.sounds =  [FlxG.sound.load(Paths.sound('whitty', 'shared'), 0.6)];
+						if (PlayState.SONG.song.toLowerCase() == 'goodbye')
+							swagDialogue.sounds =  [FlxG.sound.load(Paths.sound('ballistic', 'shared'), 0.6)];
+							else if (PlayState.SONG.song.toLowerCase() == 'end')
+								swagDialogue.sounds =  [FlxG.sound.load(Paths.sound('whitty', 'shared'), 0.6)];
 				}
 			case 'bf':
 				portraitLeft.visible = false;

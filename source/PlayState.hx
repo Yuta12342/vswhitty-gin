@@ -257,6 +257,8 @@ class PlayState extends MusicBeatState
 				storyDifficultyText = "Normal";
 			case 2:
 				storyDifficultyText = "Hard";
+			case 3:
+			  storyDifficultyText = "Gin (Hell)";
 		}
 
 		iconRPC = SONG.player2;
@@ -2902,6 +2904,9 @@ class PlayState extends MusicBeatState
 
 					if (storyDifficulty == 2)
 						difficulty = '-hard';
+
+					if (storyDifficulty == 3)
+					  difficulty = '-hard';
 
 				trace(PlayState.storyPlaylist[0].toLowerCase() + difficulty);
 					if (SONG.song.toLowerCase() == 'eggnog')
