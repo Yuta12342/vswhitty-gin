@@ -32,7 +32,7 @@ class StoryMenuState extends MusicBeatState
 		['Cocoa', 'Eggnog', 'Winter-Horrorland'],
 		['Senpai', 'Roses', 'Thorns'],
 		['Lo-Fight','Overhead', 'Ballistic', 'Goodbye', 'End'],
-		['End'],
+		['Coming Soon?'],
 
 	];
 	var curDifficulty:Int = 1;
@@ -60,6 +60,7 @@ class StoryMenuState extends MusicBeatState
 		"RED SNOW",
 		"hating simulator ft. moawling",
 		"Back Alley Finale",
+		"Coming Soon?",
 	];
 
 	var txtWeekTitle:FlxText;
