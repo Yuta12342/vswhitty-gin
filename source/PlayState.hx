@@ -348,6 +348,7 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('ballistic/pleaseSubscribe'));
 			case 'goodbye':
 					dialogue = CoolUtil.coolTextFile(Paths.txt('goodbye/theEnd'));
+			case 'goodbye' | 'endingSong':
 			case 'end':
 						dialogue = CoolUtil.coolTextFile(Paths.txt('end/theEnd'));
 		}
