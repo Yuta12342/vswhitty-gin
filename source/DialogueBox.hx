@@ -174,6 +174,7 @@ class DialogueBox extends FlxSpriteGroup
 						case 'goodbye'
 						  portraitLeft.animation.addByPrefix('enter', 'Whitty Portrait Crazy', 24, true);
 						case 'end'
+						 portraitLeft.animation.addByPrefix('enter', 'Whitty Portrait Normal', 24, false);
 					}
 
 					portraitLeft.antialiasing = true;
