@@ -71,7 +71,7 @@ class DialogueBox extends FlxSpriteGroup
 					bgFade.scrollFactor.set();
 					bgFade.alpha = 0;
 					add(bgFade);
-	
+
 					new FlxTimer().start(0.83, function(tmr:FlxTimer)
 						{
 							bgFade.alpha += (1 / 5) * 0.7;
@@ -107,7 +107,7 @@ class DialogueBox extends FlxSpriteGroup
 				var face:FlxSprite = new FlxSprite(320, 170).loadGraphic(Paths.image('weeb/spiritFaceForward'));
 				face.setGraphicSize(Std.int(face.width * 6));
 				add(face);
-			case 'lo-fight' | 'overhead' | 'ballistic' | 'lo-fight-b-side' | 'overhead-b-side' | 'ballistic-b-side':
+			case 'lo-fight' | 'overhead' | 'ballistic' | 'lo-fight-b-side' | 'overhead-b-side' | 'ballistic-b-side' | 'goodbye' | 'end':
 				hasDialog = true;
 				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
 				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
@@ -123,7 +123,7 @@ class DialogueBox extends FlxSpriteGroup
 				box.y = FlxG.height - 285;
 				box.x = 20;
 			}
-		
+
 		box.updateHitbox();
 
 		this.dialogueList = dialogueList;
@@ -178,7 +178,7 @@ class DialogueBox extends FlxSpriteGroup
 					portraitLeft.scrollFactor.set();
 					add(portraitLeft);
 					portraitLeft.visible = false;
-	
+
 					portraitRight = new FlxSprite(800, FlxG.height - 489);
 					portraitRight.frames = Paths.getSparrowAtlas('boyfriendPort', 'bonusWeek');
 					portraitRight.animation.addByPrefix('enter', 'BF portrait enter', 24, true);
@@ -342,7 +342,7 @@ class DialogueBox extends FlxSpriteGroup
 				{
 					portraitLeft.visible = true;
 					portraitLeft.animation.play('enter');
-					
+
 					if (PlayState.SONG.song.toLowerCase() == 'ballistic')
 						swagDialogue.sounds =  [FlxG.sound.load(Paths.sound('ballistic', 'shared'), 0.6)];
 					else if (PlayState.SONG.song.toLowerCase() == 'lo-fight' || PlayState.SONG.song.toLowerCase() == 'overhead')
