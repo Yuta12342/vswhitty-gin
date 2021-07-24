@@ -31,7 +31,7 @@ class StoryMenuState extends MusicBeatState
 		['Satin-Panties', "High", "Milf"],
 		['Cocoa', 'Eggnog', 'Winter-Horrorland'],
 		['Senpai', 'Roses', 'Thorns'],
-		['Lo-Fight','Overhead', 'Ballistic'],
+		['Lo-Fight','Overhead', 'Ballistic', 'Goodbye'],
 
 	];
 	var curDifficulty:Int = 1;
@@ -170,7 +170,7 @@ class StoryMenuState extends MusicBeatState
 						grpLocks.add(lock);
 						weekUnlocked.push(false);
 				}
-			
+
 			/*if (!weekUnlocked[i] && i != 7)
 			{
 				var lock:FlxSprite = new FlxSprite(weekThing.width + 10 + weekThing.x);
@@ -189,7 +189,7 @@ class StoryMenuState extends MusicBeatState
 		grpWeekCharacters.add(new MenuCharacter(0, 100, 0.5, false));
 		grpWeekCharacters.add(new MenuCharacter(450, 25, 0.9, true));
 		grpWeekCharacters.add(new MenuCharacter(850, 100, 0.5, true));
-		
+
 		difficultySelectors = new FlxGroup();
 		add(difficultySelectors);
 
