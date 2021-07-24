@@ -1103,10 +1103,10 @@ class PlayState extends MusicBeatState
 						whittyAnimation(doof, true);
 					case 'b-ballistic':
 						whittyAnimation(doof, true);
-					case 'goodbye'
+					case 'goodbye':
 				    whittyAnimation(doof, false);
-					case 'end'
-					  whittyAnimation(doof, false)
+					case 'end':
+					  whittyAnimation(doof, false);
 					default:
 						startCountdown();
 				}
