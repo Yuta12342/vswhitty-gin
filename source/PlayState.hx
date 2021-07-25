@@ -2906,7 +2906,7 @@ class PlayState extends MusicBeatState
 						difficulty = '-hard';
 
 					if (storyDifficulty == 3)
-					  difficulty = '-hard';
+					  difficulty = '-gin';
 
 				trace(PlayState.storyPlaylist[0].toLowerCase() + difficulty);
 					if (SONG.song.toLowerCase() == 'eggnog')
