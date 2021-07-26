@@ -1,7 +1,7 @@
 {
  "song": {
   "player1": "bf",
-  "gfVersion": "gf",
+  "gfVersion": "whitty",
   "notes": [
    {
     "endTime": 1197.00748129676,
@@ -35499,7 +35499,7 @@
     "mustHitSection": true
    }
   ],
-  "player2": "gf",
+  "player2": "whittyCrazy",
   "chartVersion": "2",
   "eventObjects": [
    {
@@ -35509,9 +35509,9 @@
     "type": "BPM Change"
    }
   ],
-  "song": "Ballistic Physical Mix",
+  "song": "Ballistic",
   "needsVoices": true,
-  "stage": "stage",
+  "stage": "ballisticAlley",
   "validScore": true,
   "bpm": 200.5,
   "speed": 3,
